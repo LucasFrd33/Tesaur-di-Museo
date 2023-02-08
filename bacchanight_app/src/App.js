@@ -5,6 +5,8 @@ import Intro from './components/Intro'
 import Motion1 from './components/Motion1'
 import Motion2 from './components/Motion2'
 import Answer from './components/Answer'
+import Resume from './components/Resume'
+
 
 function App(){
     const [stepSetup, setStepSetup] = useState(0);
@@ -43,7 +45,21 @@ function App(){
       },
       {
         step:
-        <Answer/>
+        <Resume 
+        handleStep={()=>handleStep(5)}
+        textButton="Suivant"
+        title={<h1>Résumé du 1er jeu </h1>}
+        text={<p>Rend toi devant cette œuvre, Analyse bien le nom de ce tableau.<br/>
+
+          Cela te donnera le 1er numéro du cadenas.</p>}
+        />
+      },
+      {
+        step:
+        <Answer
+        handleStep={()=>handleStep(1)}
+        textButton="Suivant"
+        />
       }
       // {
       //   step: <Explanation 
