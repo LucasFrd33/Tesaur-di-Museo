@@ -1,21 +1,30 @@
+import {useState} from 'react';
+
 function Answer({handleStep,textButton}) {
+  const [showButton, setShowButton] = useState(true);
+
   function handleChange(e){
     const t = e.target.value
-
-    console.log(t)
-    if(t === guava){
-      console.log("odzzd")
+    if(t === "9"){
+      const show = showButton
+      setShowButton(!show)
     }
   }
     return (
       <div className="container">
+        <h1>Quel est le numéro présent dans le titre de ce tableau ?</h1>
         <select name="fruit" onChange={handleChange}>
           <option value ="none">3</option>
-          <option value ="guava">5</option>
-          <option value ="lychee">6</option>
-          <option value ="papaya">9</option>
+          <option value ="9">9</option>
+          <option value ="none">5</option>
+          <option value ="none">1</option>
+          <option value ="none">8</option>
+          <option value ="none">7</option>
+          <option value ="none">2</option>
         </select> 
-        <button onClick={handleStep} >{textButton}</button>
+        {
+          showButton ? "" :  <button onClick={handleStep} >{textButton}</button>
+        }
       </div>
     );
   }

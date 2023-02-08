@@ -18,7 +18,7 @@ function Motion1({handleStep,textButton}) {
   }
 
   const defaultOptions = {
-    loop: true,
+    loop: false,
     autoplay: true,
     animationData: teste,
     rendererSettings: {
