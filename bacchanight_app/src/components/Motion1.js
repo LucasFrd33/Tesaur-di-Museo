@@ -30,13 +30,13 @@ function Motion1({handleStep,textButton}) {
       <div className="container">
         <Lottie 
 	        options={defaultOptions}
-          height={100%}
-          width={100%}
+          height={325}
+          width={325}
           onComplete={() => show = false}
         />
       {
         show ? "" : 
-        <button onClick={handleStep} >{textButton}</button>
+        <button className='button-motion-1' onClick={handleStep} >{textButton}</button>
       }
         
         <button onClick={handleShowTranscription}>Transcription écrite</button> 
