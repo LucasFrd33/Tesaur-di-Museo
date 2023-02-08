@@ -66,8 +66,9 @@ function App(){
 
       {
         step: <Quiz 
-        title={<h1>Commençons le 1er jeu !</h1>}
-        text={<p>Rendez-vous dans la salle : Les années 1910-1940 : du cubisme au retour à l’ordre.</p>}
+        title={<h1>Pour ce 2ème jeu, 
+          il va falloir lever les yeux du téléphone.</h1>}
+        text={<p>Et être attentif à l’environnement autour de toi !</p>}
         textButton="Jouer"
         handleStep={()=>handleStep(7)}
         />
