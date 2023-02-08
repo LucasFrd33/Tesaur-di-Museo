@@ -1,15 +1,16 @@
+import React from 'react';
 import {useState} from 'react';
 import Lottie from 'react-lottie';
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import teste from "../teste.json";
 
 function Motion1({handleStep,textButton}) {
 
   const [showTranscription, setShowTranscription] = useState(true);
   const [show, setShow] = useState(true)
-
+    
   setTimeout(() => {
-    const showButton = show
-    setShow(!showButton)
+    setShow(false)
   }, 3000)
 
   function handleShowTranscription(){
@@ -23,16 +24,16 @@ function Motion1({handleStep,textButton}) {
     animationData: teste,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice"
-    }
+    },
   };
-
     return (
       <div className="container">
-         <Lottie 
-	    options={defaultOptions}
-        height={400}
-        width={400}
-      />
+        <Lottie 
+	        options={defaultOptions}
+          height={400}
+          width={400}
+          onComplete={() => show = false}
+        />
       {
         show ? "" : 
         <button onClick={handleStep} >{textButton}</button>
