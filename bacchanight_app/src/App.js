@@ -18,7 +18,7 @@ function App(){
         transcription={true}
         handleStep={()=>handleStep(1)}
         textButton="Commencer"
-        title={<h1>Tesaur</h1>}
+        title={<h1 className='titre'>Tesaur</h1>}
         />
       },
       {
