@@ -21,7 +21,7 @@ code {
   height: 100%;
   img{ 
     position: static; 
-    margin-top: 5%;
+    margin-top: 15%;
     width: 100%;
   }
 }
@@ -35,7 +35,7 @@ code {
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 1.5%;
-    margin-top: 10%;
+    margin-top: 15%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
   }
@@ -47,15 +47,16 @@ code {
   }
 
   .button-motion-1{
-    margin-top: 55%;
-  }
-
-  .button-motion-1-2{
-    margin-top: 75%;
+    margin-top: 15%;
   }
 
   .img-bg-2{
 
+  }
+
+  svg{
+    position: absolute;
+    z-index: -1;
   }
 }
   
