@@ -35,7 +35,7 @@ function Motion1({handleStep,textButton}) {
         />
       {
         show ? "" : 
-        <button onClick={handleStep} >{textButton}</button>
+        <button className='button-motion-1' onClick={handleStep} >{textButton}</button>
       }
         
         <button onClick={handleShowTranscription}>Transcription écrite</button> 
