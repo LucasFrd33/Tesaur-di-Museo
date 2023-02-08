@@ -3,9 +3,6 @@ function Answer({handleStep,textButton}) {
     const t = e.target.value
 
     console.log(t)
-    if(t === guava){
-      console.log("odzzd")
-    }
   }
     return (
       <div className="container">

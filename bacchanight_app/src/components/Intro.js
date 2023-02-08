@@ -6,7 +6,7 @@ function Intro({text, textButton, image, handleStep, title}) {
     <div className="container">
       {title}
     <img src="./img/image1.png" alt="tt" />
-      <button onClick={handleStep} >{textButton}</button>
+      <button className="button" onClick={handleStep} >{textButton}</button>
     </div>
   );
 }
