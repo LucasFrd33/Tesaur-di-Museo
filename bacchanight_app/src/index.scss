@@ -5,10 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  overflow: hidden;
+  
 }
 
+#root {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -23,6 +28,12 @@ code {
 
 }
 
+.actions {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+}
 @media (max-width: 992px) {
   button{
     font-size: 14pt;
