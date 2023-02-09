@@ -33,6 +33,8 @@ function Motion1({handleStep,textButton}) {
           width={390}
           onComplete={() => setShow(false)}
         />
+      <img className='img-bg-2' src="./img/image2.webp" alt="tt" />
+
       {
         show ? "" : 
         <button className='button-motion-1' onClick={handleStep} >{textButton}</button>
