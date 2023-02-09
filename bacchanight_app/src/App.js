@@ -70,6 +70,7 @@ function App(){
           il va falloir lever les yeux du téléphone.</h1>}
         text={<p>Et être attentif à l’environnement autour de toi !</p>}
         textButton="Jouer"
+        image={<img className="img-quiz-1" src="./img/group-122.webp" alt="tt" />}
         handleStep={()=>handleStep(7)}
         />
       },

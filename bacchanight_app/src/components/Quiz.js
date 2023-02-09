@@ -1,4 +1,4 @@
-function Quiz({text, textButton, handleStep, title}) {
+function Quiz({text, textButton, handleStep, title, image}) {
 
 
     // const imgLaunch = [
@@ -26,8 +26,7 @@ function Quiz({text, textButton, handleStep, title}) {
       {title}
       <p>{text}</p>
       <button onClick={handleStep} >{textButton}</button>
-      <img className="img-quiz-1" src="./img/group-122.webp" alt="tt" />
-      <img className="img-quiz-2" src="./img/img-quizz2.webp" alt="tt" />
+      {image}
     </div>
     
   );
