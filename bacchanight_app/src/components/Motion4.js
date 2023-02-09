@@ -3,7 +3,7 @@ import {useState} from 'react';
 import Lottie from 'react-lottie';
 import v1 from "../V1.json";
 
-function Motion2({handleStep,textButton}) {
+function Motion4({handleStep,textButton}) {
 
   const [showTranscription, setShowTranscription] = useState(true);
   const [show, setShow] = useState(true)
@@ -27,7 +27,7 @@ function Motion2({handleStep,textButton}) {
   };
     return (
       <div className="container">
-        <h1>Commençons par le 1er jeu !</h1>
+        <h1>Commençons le 3ème jeu !</h1>
         <Lottie 
 	        options={defaultOptions}
           height={600}
@@ -65,5 +65,5 @@ function Motion2({handleStep,textButton}) {
     );
   }
   
-  export default Motion2;
+  export default Motion4;
   
