@@ -184,11 +184,11 @@ function App(){
     
 
   return (
-    <div className="">
+    <>
     {
       stepPage[stepSetup].step
     }
-    </div>
+    </>
   );
 }
 
