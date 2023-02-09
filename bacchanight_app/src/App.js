@@ -42,8 +42,8 @@ function App(){
 
       {
         step: <Quiz 
-        title={<h1>Commençons le 1er jeu !</h1>}
-        text={<p>Rendez-vous dans la salle : Les années 1910-1940 : du cubisme au retour à l’ordre.</p>}
+        title={<h1 className='h1-quiz'>Commençons le 1er jeu !</h1>}
+        text={<p className='text-quiz'>Rendez-vous dans la salle : Les années 1910-1940 : du cubisme au retour à l’ordre.</p>}
         textButton="Jouer"
         handleStep={()=>handleStep(3)}
         />
@@ -102,6 +102,7 @@ function App(){
         text={<p>Et être attentif à l’environnement autour de toi !</p>}
         textButton="Jouer"
         handleStep={()=>handleStep(9)}
+        image={<img className="img-quiz-1" src="./img/group-122.webp" alt="tt" />}
         />
       },
       {

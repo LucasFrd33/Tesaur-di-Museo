@@ -1,4 +1,4 @@
-function Quiz({text, textButton, handleStep, title}) {
+function Quiz({text, textButton, handleStep, title, image}) {
 
 
     // const imgLaunch = [
@@ -22,10 +22,11 @@ function Quiz({text, textButton, handleStep, title}) {
 
   return (
     <div className="container">
+      
       {title}
       <p>{text}</p>
       <button onClick={handleStep} >{textButton}</button>
-
+      {image}
     </div>
     
   );
