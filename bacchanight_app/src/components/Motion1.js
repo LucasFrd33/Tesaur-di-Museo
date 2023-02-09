@@ -29,18 +29,17 @@ function Motion1({handleStep,textButton}) {
       <div className="container">
         <Lottie 
 	        options={defaultOptions}
-          height={600}
-          width={390}
           onComplete={() => setShow(false)}
         />
       <img className='img-bg-2' src="./img/image2.webp" alt="tt" />
 
-      {
-        show ? "" : 
-        <button className='button-motion-1' onClick={handleStep} >{textButton}</button>
-      }
-        
+      <div className="actions">
+        {
+          show ? "" : 
+          <button className='button-motion-1' onClick={handleStep} >{textButton}</button>
+        }
         <button onClick={handleShowTranscription}>Transcription écrite</button> 
+      </div>
 {showTranscription ? "" :
         <p> (François Mauriac)	- Viens me voir ! Je suis François Mauriac, le buste avec un style <br/>
       cubique. Veux-tu que je te raconte mon histoire ?<br/>
