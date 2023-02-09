@@ -22,10 +22,12 @@ function Quiz({text, textButton, handleStep, title}) {
 
   return (
     <div className="container">
+      
       {title}
       <p>{text}</p>
       <button onClick={handleStep} >{textButton}</button>
-
+      <img className="img-quiz-1" src="./img/group-122.webp" alt="tt" />
+      <img className="img-quiz-2" src="./img/img-quizz2.webp" alt="tt" />
     </div>
     
   );

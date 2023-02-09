@@ -19,7 +19,7 @@ code {
 }
 .container img {
   position: static;
-  margin-top: 45%;
+  margin-top: 15%;
   width: 100%;
 }
 
@@ -32,14 +32,48 @@ code {
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 1.5%;
-    margin-top: 10%;
+    margin-top: 15%;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
   h1 {
-    position: absolute;
-    top: 5%;
+    margin-top: 15%;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
+  }
+  p {
+    padding: 1em;
+  }
+  h1 {
+    margin-top: 41%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-left: 1em;
+    padding-right: 2em;
+  }
+  .img-quiz-1 {
+    position: static;
+    margin-top: -110% !important;
+    width: 16% !important;
+    margin-left: 94% !important;
+    z-index: -1 !important;
+  }
+  .img-quiz-2 {
+    margin-top: 23% !important;
+    width: 45% !important;
+    margin-right: 55% !important;
+  }
+  .text-quiz {
+    padding: 1em;
+    padding-right: 2em;
+    -webkit-margin-before: -3em !important;
+            margin-block-start: -3em !important;
+  }
+  .button-motion-1 {
+    margin-top: 15%;
+  }
+  svg {
+    position: absolute;
+    z-index: -1;
   }
 }/*# sourceMappingURL=index.css.map */
