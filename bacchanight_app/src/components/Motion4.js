@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState} from 'react';
 import Lottie from 'react-lottie';
-import v1 from "../V1.json";
+import v1 from "../V1-tbl3.json";
 
 function Motion4({handleStep,textButton}) {
 
